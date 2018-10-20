@@ -1,0 +1,60 @@
+<div class="container-fluid weather-app-mainpage">
+  <img src="assets/images/cloud1.png" alt="cloud-1" class="cloud-1" height="100" width="150">
+  <img src="assets/images/cloud2.png" alt="cloud-2" class="cloud-2" height="60" width="80">
+  <div class="container weather-form-window text-center">
+    <div class="row">
+    <div class="col weather-main">
+      <form>
+        <img class="search-image" src="assets/images/search.svg" (click)="saveForm()" height="12"width="12">
+        <div class="search-city-input-box">
+          <input type="text"  class="form-control transparent-input" placeholder="Enter City" name="city" [(ngModel)]="city" (keyup.enter)="saveForm()" >
+        </div>
+        <img class="x-image" src="assets/images/times.svg" (click)="clearSearch()" height="12"width="12">
+      </form>
+      <div class="city-weather-main">
+        <div class="city-weather-main-temp">{{ this.Math.round(weather.list["0"].main.temp) }}</div>
+        <div class="city-weather-right-box">
+          <div class="degree-symbol">°</div>
+          <div class="farenheit">F </div>
+          <div class="city-weather-description"> {{ weather.list["0"].weather["0"].description }} </div>
+          <div class="city-weather-humidity"> {{ weather.list["0"].main.humidity }} % humidity </div>
+        </div>
+      </div>
+    </div></div>
+    <div class="row">
+      <div class="col daily-weather-box">
+        <div class="city-weather city-weather-day-1">
+          <div class="city-weather-date"> May {{ weather.list["0"].dt_txt[8] + weather.list["0"].dt_txt[9] }} </div>
+          <div class="icon"><img id="wicon1" src="{{ imgPath + weather.list[0].weather[0].icon + imgFileName}}"></div>
+          <div class="city-weather-highest"> {{ this.Math.round(weather.list["0"].main.temp_max) }}</div>
+          <div class="city-weather-lowest"> {{ this.Math.round(weather2.main.temp_min) }} </div>
+        </div>
+        <div class="city-weather city-weather-day-2">
+          <div class="city-weather-date"> May {{ weather.list[8].dt_txt[8] + weather.list[8].dt_txt[9] }} </div>
+          <div class="city-weather-image"><img id="wicon2" src="{{ imgPath + weather.list[8].weather[0].icon + imgFileName}}"></div>
+          <div class="city-weather-highest"> {{ this.Math.round(weather.list["8"].main.temp_max) }}</div>
+          <div class="city-weather-lowest"> {{ this.Math.round(weather.list["8"].main.temp_min) }} </div>
+        </div>
+        <div class="city-weather city-weather-day-3">
+          <div class="city-weather-date"> May {{ weather.list[16].dt_txt[8] + weather.list["16"].dt_txt[9] }} </div>
+          <div class="city-weather-image"><img id="wicon3" src="{{ imgPath + weather.list[16].weather[0].icon + imgFileName}}"></div>
+          <div class="city-weather-highest"> {{ this.Math.round(weather.list["16"].main.temp_max) }}</div>
+          <div class="city-weather-lowest"> {{ this.Math.round(weather.list["16"].main.temp_min) }} </div>
+        </div>
+        <div class="city-weather city-weather-day-4">
+          <div class="city-weather-date"> May {{ weather.list[24].dt_txt[8] + weather.list["24"].dt_txt[9] }} </div>
+          <div class="city-weather-image"><img id="wicon4" src="{{ imgPath + weather.list[24].weather[0].icon + imgFileName}}"></div>
+          <div class="city-weather-highest"> {{ this.Math.round(weather.list["24"].main.temp_max) }}</div>
+          <div class="city-weather-lowest"> {{ this.Math.round(weather.list["24"].main.temp_min) }} </div>
+        </div>
+        <div class="city-weather city-weather-day-5">
+          <div class="city-weather-date"> May {{ weather.list[32].dt_txt[8] + weather.list["32"].dt_txt[9] }} </div>
+          <div class="city-weather-image"><img id="wicon5" src="{{ imgPath + weather.list[32].weather[0].icon + imgFileName}}"></div>
+          <div class="city-weather-highest"> {{ this.Math.round(weather.list["32"].main.temp_max) }}</div>
+          <div class="city-weather-lowest"> {{ this.Math.round(weather.list["32"].main.temp_min) }} </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

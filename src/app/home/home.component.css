@@ -1,0 +1,136 @@
+.weather-app-mainpage{
+  height: 700px;
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(#367CD6, #183968);
+}
+
+.weather-form-window{
+  height:323px;
+  width: 400px;
+  opacity:0.8;
+  border-radius: 15px;
+}
+
+/*images*/
+
+.cloud {
+  z-index: 1;
+}
+
+.cloud-1 {
+  top:150px;
+  position:relative;
+  left: 200px;
+}
+
+.cloud-2{
+  top:100px;
+  position:relative;
+  left:450px;
+}
+
+.search-image{
+  display:inline-block;
+  opacity:0.9;
+}
+
+.x-image{
+  display:inline-block;
+}
+
+.degree-symbol{
+  font-size:40px;
+  display:inline-block;
+  color:white;
+  position: relative;
+  font-weight: bold;
+  float: left;
+  top: 5px;
+}
+
+.farenheit{
+  font-size: 30px;
+  color:white;
+  display:inline-block;
+  position:relative;
+  top: 10px;
+  right: 28px;
+}
+
+/*Today's weather box styling */
+
+.weather-main{
+  background-color: #4A90E2;
+  border-radius: 15px 15px 0 0;
+  height: 200px;
+}
+
+.city-weather-main-temp{
+  display:inline-block;
+  font-size: 100px;
+  color:white;
+  font-weight:lighter;
+}
+
+.city-weather-right-box{
+  display: inline-block;
+}
+
+.city-weather-description{
+  color:white;
+  font-size:15px;
+  font-weight: lighter;
+  padding-left: 10px;
+}
+
+.city-weather-humidity{
+  color:white;
+  font-size:10px;
+  font-weight: lighter;
+  padding-left: 10px;
+}
+
+/*5 day weather forecast styling*/
+
+.daily-weather-box{
+  background-color: white;
+  border-radius: 0 0 15px 15px;
+}
+
+.city-weather-date{
+  font-size: 13px;
+  color: lightgray;
+  font-weight:lighter;
+}
+
+.city-weather-highest{
+  font-weight: bolder;
+  font-size: 14px;
+  color: gray;
+}
+
+.city-weather-lowest{
+  font-size: 10px;
+  color:gray;
+}
+
+.city-weather {
+  display: inline-block;
+  padding: 10px;
+}
+
+/*Search bar styling*/
+
+.search-city-input-box {
+  padding-top: 10px;
+  width: 90%;
+  display:inline-block;
+}
+
+.transparent-input {
+   background-color: rgba(0, 0, 0, 0);
+   border-top:none;
+   border-left:none;
+   border-right:none;
+   border-bottom-color: #367CD6;
+}
