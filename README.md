@@ -1,4 +1,4 @@
-![alt text](assets/images/screenshot.png)
+![alt text](src/assets/images/screenshot.png)
 
 # Weather App with Angular 6
 
