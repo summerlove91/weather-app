@@ -1,6 +1,8 @@
+![alt text](assets/images/screenshot.png)
+
 # Weather App with Angular 6
 
-This Weather App is created as Tech Challenge for interview with Oracle web developer position.
+Weather App is my frontend project built with Angular 5. Using the API provided by http://openweathermap.org/, you can search city name and weather app retrieves 5 day weather forecast of the city with lowest and highest temperature in Farenheit.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
 
 ## User stories
